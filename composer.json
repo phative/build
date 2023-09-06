@@ -1,0 +1,19 @@
+{
+    "name": "phative/build",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Phative\\Build\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mateusz Cholewka",
+            "email": "mateusz@cholewka.com.pl"
+        }
+    ],
+    "require": {
+        "theseer/autoload": "^1.28"
+    }
+}
