@@ -2,6 +2,7 @@
     "name": "phative/build",
     "type": "library",
     "license": "MIT",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Phative\\Build\\": "src/"
@@ -15,5 +16,10 @@
     ],
     "require": {
         "theseer/autoload": "^1.28"
-    }
+    },
+    "require-dev": {
+        "humbug/box": "^4.0@dev",
+        "crazywhalecc/static-php-cli": "dev-main"
+    },
+    "bin": "./bin/build"
 }
