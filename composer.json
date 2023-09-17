@@ -15,9 +15,7 @@
         }
     ],
     "require": {
-        "theseer/autoload": "^1.28"
-    },
-    "require-dev": {
+        "theseer/autoload": "^1.28",
         "humbug/box": "^4.0@dev",
         "crazywhalecc/static-php-cli": "dev-main"
     },
