@@ -12,6 +12,6 @@ if (!$opt['d']) {
 
 $dir = $opt['d'];
 
-passthru(__DIR__ . '/../../humbug/box/bin/box compile -c' . $dir . '/box.json');
+passthru($dir . '/vendor/humbug/box/bin/box compile -c' . $dir . '/box.json');
 //passthru(__DIR__ . '/../../crazywhalecc/static-php-cli/bin/spc build phar,curl,posix,pcntl,tokenizer,ffi,mbstring --build-micro');
-passthru('php -d memory_limit=1G ' . __DIR__ . '/../../crazywhalecc/static-php-cli/bin/spc micro:combine ' . $dir . '/dist/app.phar -N ' . __DIR__ . '/../etc/php.ini --output=' . $dir . '/my-app');
+passthru('php -d memory_limit=1G ' . $dir . '/vendor/crazywhalecc/static-php-cli/bin/spc micro:combine ' . $dir . '/dist/app.phar -N ' . __DIR__ . '/../etc/php.ini --output=' . $dir . '/my-app');
